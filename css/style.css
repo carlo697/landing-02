@@ -1,0 +1,179 @@
+:root {
+	--botones: rgb(243, 73, 73);
+}
+
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+button {
+	border: none;
+	outline: none;
+}
+
+body {
+	width: 100vw;
+}
+
+html {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.esconder {
+	display: none;
+}
+
+.banner {
+	padding: 0 20px 0px 20px;
+	color: white;
+	min-height: 100vh;
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	position: relative;
+}
+
+.banner::before {
+	content: "";
+	background: url("../img/banner.jpg");
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -100;
+	filter: brightness(0.4);
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 20px 20px 25px;
+}
+
+.nav-enlace {
+	margin-right: 30px;
+}
+
+.nav-enlace:last-child {
+	margin-right: 0;
+}
+
+.nav-boton {
+	width: 40px;
+	height: 40px;
+	font-size: 2em;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+.borde {
+	background-color: transparent;
+	border: 2px solid white;
+	border-radius: 5px;
+}
+
+.banner-contenido {
+	margin-top: 150px;
+	max-width: 800px;
+	text-align: center;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.banner-contenido h2 {
+	font-size: 2em;
+	margin-bottom: 20px;
+	font-weight: 400;
+}
+
+.banner-contenido p {
+	font-size: 1em;
+	width: 75%;
+	position: relative;
+	font-weight: 300;
+}
+
+.banner-contenido p::before,
+.banner-contenido p::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: -10%;
+	background-color: rgba(255, 255, 255, 0.8);
+	width: 10%;
+	height: 1px;
+}
+
+.banner-contenido p::after {
+	left: 100%;
+}
+
+
+@media (min-width: 400px) {
+	.header {
+		padding: 20px 60px 20px 25px;
+	}
+}
+
+@media (min-width: 600px) {
+	.banner-contenido {
+		font-size: 20px;
+	}
+}
+
+
+.cabecera {
+	margin-bottom: 20px;
+	font-size: 2rem;
+	text-align: center;
+
+	color: var(--botones);
+}
+
+
+.acerca {
+	padding: 50px 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.acerca p {
+	margin-bottom: 20px;
+	max-width: 600px;
+	text-align: center;
+}
+
+.acerca .parrafo-1 {
+	font-weight: 600;
+}
+
+.acerca img {
+	width: 100%;
+	max-width: 600px;
+}
