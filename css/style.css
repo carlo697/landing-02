@@ -1,5 +1,7 @@
 :root {
 	--botones: rgb(243, 73, 73);
+	--fondo1: white;
+	--findo2: #e5eff1;;
 }
 
 * {
@@ -19,11 +21,15 @@ button {
 }
 
 body {
-	width: 100vw;
+	width: 100%;
 }
 
 html {
 	font-family: 'Open Sans', sans-serif;
+}
+
+main {
+	widows: 100%;
 }
 
 .esconder {
@@ -147,16 +153,19 @@ html {
 
 
 .cabecera {
-	margin-bottom: 20px;
+	margin-bottom: 50px;
 	font-size: 2rem;
 	text-align: center;
 
 	color: var(--botones);
 }
 
+.seccion {
+	padding: 50px 30px;
+}
+
 
 .acerca {
-	padding: 50px 30px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -176,4 +185,63 @@ html {
 .acerca img {
 	width: 100%;
 	max-width: 600px;
+}
+
+
+.servicios {
+	background: var(--findo2);
+}
+
+.servicios-contenedor {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.servicio-caja {
+	display: flex;
+	margin-bottom: 50px;
+}
+
+.servicio-caja:last-child {
+	margin-bottom: 0;
+}
+
+.servicio-imagen {
+	width: 60px;
+	height: 60px;
+	flex-shrink: 0;
+	background-color: var(--botones);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5em;
+	color: white;
+	margin-right: 15px;
+}
+
+.servicio-contenido {
+	max-width: 450px;
+}
+
+.servicio-contenido h3 {
+	margin-bottom: 10px;
+}
+
+.servicio-contenido p {
+	font-size: 0.9em;
+}
+
+
+@media (min-width: 800px) {
+	.servicios-contenedor {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap: 30px;
+		grid-row-gap: 50px;
+	}
+
+	.servicio-caja {
+		margin: 0px;
+	}
 }
