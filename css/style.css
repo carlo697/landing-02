@@ -75,8 +75,29 @@ main {
 	padding: 20px 20px 20px 25px;
 }
 
+.logo {
+	text-transform: uppercase;
+}
+
+.enlaces-contenedor {
+	display: none;
+}
+
 .nav-enlace {
-	margin-right: 30px;
+	margin-right: 5px;
+	border: 2px solid transparent;
+	transition: 0.4s;
+	padding: 10px 20px;
+	border-radius: 100px;
+	font-size: 0.9em;
+}
+
+.nav-enlace:first-child {
+	border: 2px solid white;
+}
+
+.nav-enlace:hover {
+	border: 2px solid white;
 }
 
 .nav-enlace:last-child {
@@ -149,6 +170,16 @@ main {
 @media (min-width: 600px) {
 	.banner-contenido {
 		font-size: 20px;
+	}
+}
+
+@media (min-width: 700px) {
+	.enlaces-contenedor {
+		display: block;
+	}
+
+	.nav-boton {
+		display: none;
 	}
 }
 
