@@ -245,3 +245,51 @@ main {
 		margin: 0px;
 	}
 }
+
+
+
+.platos-contenedor {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.plato-caja {
+	flex-basis: 200px;
+	margin: 10px;
+	border: 6px solid #dbdbdb;
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+	flex-grow: 1;
+}
+
+.plato-caja img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	object-fit: cover;
+	transition: transform 0.4s;
+	
+}
+
+.plato-caja img:hover {
+	transform: scale(1.05);
+	filter: brightness(1.05);
+}
+
+.plato-caja::after {
+	content: "aa";
+	background: rgba(0, 0, 0, 30%);
+	position: absolute;
+	width: 200%;
+	height: 100px;
+	top: 0;
+	left: 0;
+	transition: transform 0.5s;
+	transform: rotate(45deg) translateY(-100%);
+}
+
+.plato-caja:hover::after {
+	transform: rotate(45deg) translateY(500%);
+}
