@@ -121,6 +121,7 @@ main {
 	width: 75%;
 	position: relative;
 	font-weight: 300;
+	margin-bottom: 30px;
 }
 
 .banner-contenido p::before,
@@ -163,6 +164,22 @@ main {
 .seccion {
 	padding: 50px 30px;
 }
+
+.boton1 {
+	background: var(--botones);
+	padding: 10px 20px;
+	border-radius: 100px;
+	font-weight: 700;
+	border: 2px solid transparent;
+	transition: 0.4s;
+}
+
+.boton1:hover {
+	background: transparent;
+	border: 2px solid white;
+}
+
+
 
 
 .acerca {
