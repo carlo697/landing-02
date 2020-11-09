@@ -173,7 +173,7 @@ main {
 	}
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
 	.enlaces-contenedor {
 		display: block;
 	}
@@ -203,6 +203,7 @@ main {
 	font-weight: 700;
 	border: 2px solid transparent;
 	transition: 0.4s;
+	font-size: 0.9em;
 }
 
 .boton1:hover {
@@ -340,4 +341,14 @@ main {
 
 .plato-caja:hover::after {
 	transform: rotate(45deg) translateY(500%);
+}
+
+
+.footer {
+	background: #212121;
+}
+
+.footer p {
+	color: white;
+	text-align: center;
 }
