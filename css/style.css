@@ -19,6 +19,7 @@ a {
 button {
 	border: none;
 	outline: none;
+	cursor: pointer;
 }
 
 body {
@@ -346,8 +347,79 @@ main {
 
 
 
+
+.resena {
+	position: relative;
+	color: white;
+	text-align: center;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.resena .icono {
+	font-size: 3em;
+	margin-bottom: 40px;
+}
+
+.resena .icono {
+	font-size: 3em;
+	margin-bottom: 40px;
+}
+
+.resena::before {
+	content: "";
+	background: url("../img/banner.jpg");
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -100;
+	filter: brightness(0.4);
+}
+
+.resena-texto {
+	margin-bottom: 30px;
+	max-width: 500px;
+	font-weight: lighter;
+}
+
+.autor-texto {
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.autor-nombre {
+	font-weight: bolder;
+}
+
+
+.slider-boton {
+	background: var(--botones);
+	opacity: 0.5;
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	margin: 10px;
+	transition: 0.2s;
+}
+
+.slider-boton[active] {
+	opacity: 1;
+}
+
+.slider-boton:hover {
+	transform: scale(1.2);
+}
+
+
+
 .contacto {
-	background-color: var(--findo2);
+
 }
 
 .contacto-contenedor {
