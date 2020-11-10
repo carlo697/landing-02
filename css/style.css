@@ -1,7 +1,8 @@
 :root {
 	--botones: rgb(243, 73, 73);
 	--fondo1: white;
-	--findo2: #e5eff1;;
+	--findo2: #e5eff1;
+	--texto-claro: #999999;
 }
 
 * {
@@ -188,7 +189,7 @@ main {
 	margin-bottom: 50px;
 	font-size: 2rem;
 	text-align: center;
-
+	letter-spacing: 2px;
 	color: var(--botones);
 }
 
@@ -342,6 +343,61 @@ main {
 .plato-caja:hover::after {
 	transform: rotate(45deg) translateY(500%);
 }
+
+
+
+.contacto {
+	background-color: var(--findo2);
+}
+
+.contacto-contenedor {
+	display: flex;
+	flex-direction: column;
+}
+
+.contacto-contenedor > div {
+	width: 100%;
+}
+
+.contacto-contenedor h2 {
+	margin-bottom: 30px;
+	letter-spacing: 2px;
+}
+
+.contacto-contenedor li {
+	margin-bottom: 20px;
+	list-style: none;
+	color: var(--texto-claro);
+}
+
+.contacto-contenedor .icono {
+	width: 40px;
+	color: black;
+	transition: 0.3s;
+}
+
+.contacto-contenedor li:hover .icono {
+	transform: translateY(-4px) scale(1.1);
+	color: var(--botones);
+}
+
+iframe {
+	width: 100%;
+	min-height: 300px;
+}
+
+
+@media (min-width: 700px) {
+	.contacto-contenedor {
+		flex-direction: row;
+		margin-left: 40px;
+	}
+
+	.contacto-contenedor > div {
+		width: 50%;
+	}
+}
+
 
 
 .footer {
